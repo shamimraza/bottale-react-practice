@@ -1,0 +1,13 @@
+.battle {
+    border: 2px solid seagreen;
+    padding: 10px;
+    border-radius: 10px;
+    margin-top: 12px;
+
+}
+
+.battle img {
+    width: 300px;
+    margin: 0 auto;
+
+}
