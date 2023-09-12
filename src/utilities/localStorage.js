@@ -18,5 +18,14 @@ const addToLocalStorage = id => {
     // save to local storage
     saveCardToLocalStorage(card)
 }
-export { addToLocalStorage }
+
+
+const removeFromLocalStorage = id => {
+    const cards = getStoreCard();
+    // removing every id
+    const remaining = cards.filter(idx => idx !== id)
+    saveCardToLocalStorage(remaining)
+
+}
+export { addToLocalStorage, getStoreCard, removeFromLocalStorage }
 
