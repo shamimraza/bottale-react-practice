@@ -17,6 +17,7 @@ const Bottles = () => {
 
 
     const handleButtonPress = (bottle) => {
+        console.log(bottle);
         const newCart = [...cards, bottle];
         setCards(newCart);
         addToLocalStorage(bottle.id)

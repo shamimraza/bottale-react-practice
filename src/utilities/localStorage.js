@@ -7,6 +7,7 @@ const getStoreCard = () => {
 }
 
 const saveCardToLocalStorage = (cards) => {
+    console.log(cards);
     const cardStringified = JSON.stringify(cards);
     localStorage.setItem('cards', cardStringified);
 }
@@ -18,3 +19,4 @@ const addToLocalStorage = id => {
     saveCardToLocalStorage(card)
 }
 export { addToLocalStorage }
+
